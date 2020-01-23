@@ -9,6 +9,9 @@ public class Scenery : MonoBehaviour
     private float currentValue;
     [SerializeField]
     private float speedFactor = 0.003f;
+    [SerializeField]
+    private Transform controllerR, controllerL;
+    
 
     private void Start()
     {
@@ -28,6 +31,7 @@ public class Scenery : MonoBehaviour
         float randomValueG = Random.Range(-0.015f, 0.015f);
         float randomValueB = Random.Range(-0.015f, 0.015f);
 
+        /*
         //Change currentValue to know where in the process we are.
         if(positive && currentValue < 1)
         {
@@ -37,10 +41,10 @@ public class Scenery : MonoBehaviour
         {
             currentValue -= speedFactor;
         }
-
+        */
         //Change color depending on where in the process we are.
 
-
+        currentValue = controllerR.localPosition.z;
         //Backwards: Change value according to difference from start to current value.
         
         float differenceSteps;
