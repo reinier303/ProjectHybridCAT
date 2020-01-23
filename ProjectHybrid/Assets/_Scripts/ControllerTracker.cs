@@ -28,6 +28,23 @@ namespace Bas
                 RightControllerPosition = rightController.transform.localPosition;
         }
 
+        //Getter for controllerpositions defined by index
+        public Vector3 GetControllerPosition(int controllerindex)
+        {
+            switch(controllerindex)
+            {
+                case 0:
+                    return LeftControllerPosition;
+                    break;
+                case 1:
+                    return RightControllerPosition;
+                    break;
+                default:
+                    return LeftControllerPosition;
+                    break;
+            }
+        }
+
         public void UpdateControllerTransform(Vector3 controllerPosition)
         {
             if (leftController.transform.localPosition == controllerPosition)
