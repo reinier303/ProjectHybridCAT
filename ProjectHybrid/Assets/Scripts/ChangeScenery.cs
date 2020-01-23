@@ -22,7 +22,7 @@ public class ChangeScenery : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
         if(vertical > 0)
         {
-            foreach (GameObject sObject in randomScenery)
+            foreach (GameObject sObject in sceneryObjects)
             {
                 Scenery sceneryScript = sObject.GetComponent<Scenery>();
                 sceneryScript.ChangeMaterialColor(true);
@@ -30,7 +30,7 @@ public class ChangeScenery : MonoBehaviour
         }
         if (vertical < 0)
         {
-            foreach (GameObject sObject in randomScenery)
+            foreach (GameObject sObject in sceneryObjects)
             {
                 Scenery sceneryScript = sObject.GetComponent<Scenery>();
                 sceneryScript.ChangeMaterialColor(false);
