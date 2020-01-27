@@ -43,8 +43,8 @@ public class FissaExample : MonoBehaviour
             Debug.DrawLine(start, end);
             foreach (GameObject obj in DistortianObjects)
             {
-                float scaleX = Mathf.Cos(Time.time) * 0.5f + 1;
-                float scaleY = Mathf.Sin(Time.time) * 0.5f + 1;
+                float scaleX = Mathf.Cos(Time.time) * 2f + 1;
+                float scaleY = Mathf.Sin(Time.time) * 2f + 1;
                 obj.GetComponent<Renderer>().material.mainTextureScale = new Vector2(scaleX, scaleY);
             }
         }
