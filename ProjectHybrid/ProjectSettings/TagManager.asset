@@ -8,6 +8,7 @@ TagManager:
   - projectile
   - FxTemporaire
   - Test
+  - Lights
   layers:
   - Default
   - TransparentFX

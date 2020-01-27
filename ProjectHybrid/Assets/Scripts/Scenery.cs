@@ -37,19 +37,25 @@ public class Scenery : MonoBehaviour
     public float RangeFactorY;
     public float RangeFactorZ;
 
+
+    public ChangeScenery changeScenery;
     //Start     -0.52
 
     //POS -0.71
 
     //NEG - 0.16
 
-    private void Start()
+    public void Initialize()
     {
         meshRenderer = GetComponent<MeshRenderer>();
         light = GetComponent<Light>();
         if(light != null)
         {
             startIntensity = light.intensity;
+        }
+        if (light == null)
+        {
+            ChangeScenery.Instance.lights.Remove(gameObject);
         }
 
         if (meshRenderer != null)
@@ -58,6 +64,10 @@ public class Scenery : MonoBehaviour
 
             startColor = meshRenderer.material.color;
             RGorB = Random.Range(0, 3);
+        }
+        if(meshRenderer == null)
+        {
+            ChangeScenery.Instance.sceneryObjects.Remove(gameObject);
         }
 
         RStartValueX = controllerR.localPosition.x / RangeFactorX;
@@ -107,11 +117,7 @@ public class Scenery : MonoBehaviour
 
     public void ChangeLights()
     {
-        if(light == null)
-        {
-            Debug.Log("No light on object");
-            return;
-        }
+
         float currentIntensity = light.intensity;
 
         currentValueZ = controllerR.localPosition.z / RangeFactorZ;

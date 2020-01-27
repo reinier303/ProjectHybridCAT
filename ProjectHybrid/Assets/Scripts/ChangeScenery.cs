@@ -9,18 +9,21 @@ public class ChangeScenery : MonoBehaviour
     [SerializeField]
     public Transform RightController;
 
-    private List<GameObject> sceneryObjects = new List<GameObject>();
-    private List<GameObject> lights = new List<GameObject>();
+    public List<GameObject> sceneryObjects = new List<GameObject>();
+    public List<GameObject> lights = new List<GameObject>();
     private List<GameObject> randomScenery = new List<GameObject>();
 
     public float RangeFactorX;
     public float RangeFactorY;
     public float RangeFactorZ;
 
+    public static ChangeScenery Instance;
+
 
     private void Awake()
     {
-        foreach(GameObject foundObject in GameObject.FindGameObjectsWithTag("Scenery"))
+        Instance = this;
+        foreach (GameObject foundObject in GameObject.FindGameObjectsWithTag("Scenery"))
         {
             if(!foundObject.GetComponent<Scenery>())
             {
@@ -33,8 +36,10 @@ public class ChangeScenery : MonoBehaviour
             sceneryScript.RangeFactorY = RangeFactorY;
             sceneryScript.RangeFactorZ = RangeFactorZ;
 
-
             sceneryObjects.Add(foundObject);
+
+            sceneryScript.Initialize();
+
         }
         foreach (GameObject foundObject in GameObject.FindGameObjectsWithTag("Lights"))
         {
@@ -48,6 +53,9 @@ public class ChangeScenery : MonoBehaviour
             sceneryScript.RangeFactorZ = RangeFactorZ;
 
             lights.Add(foundObject);
+
+            sceneryScript.Initialize();
+
         }
         GetRandomScenery();
     }
