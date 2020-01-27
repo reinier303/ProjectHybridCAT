@@ -5,14 +5,37 @@ using UnityEngine;
 public class Scenery : MonoBehaviour
 {
     private MeshRenderer meshRenderer;
-    private Color StartColor;
-    private float currentValue;
+    private Light light;
+
     [SerializeField]
     private float speedFactor = 0.003f;
     [SerializeField]
     public Transform controllerR, controllerL;
 
     public Vector2 RZAxis = new Vector2(0, 2);
+
+    //Lights
+    private float startIntensity;
+
+    //Color
+    int RGorB;
+    private Color startColor;
+
+    //Tiling
+    private Vector2 startTiling;
+
+    //Axis Info
+    private float currentValueX;
+    private float currentValueY;
+    private float currentValueZ;
+
+    public float RStartValueX;
+    public float RStartValueY;
+    public float RStartValueZ;
+
+    public float RangeFactorX;
+    public float RangeFactorY;
+    public float RangeFactorZ;
 
     //Start     -0.52
 
@@ -23,73 +46,78 @@ public class Scenery : MonoBehaviour
     private void Start()
     {
         meshRenderer = GetComponent<MeshRenderer>();
-        StartColor = meshRenderer.material.color;
-        currentValue = 0;
+        light = GetComponent<Light>();
+        if(light != null)
+        {
+            startIntensity = light.intensity;
+        }
+
+        if (meshRenderer != null)
+        {
+            startTiling = meshRenderer.material.mainTextureScale;
+
+            startColor = meshRenderer.material.color;
+            RGorB = Random.Range(0, 3);
+        }
+
+        RStartValueX = controllerR.localPosition.x / RangeFactorX;
+        RStartValueY = controllerR.localPosition.y / RangeFactorY;
+        RStartValueZ = controllerR.localPosition.z / RangeFactorZ;
     }
 
-    public void ChangeMaterialColor(bool positive)
+    public void ChangeMaterialColorController()
     {
         Color currentColor = meshRenderer.material.color;
         float currentMetallic = meshRenderer.material.GetFloat("_Metallic");
         float currentSmoothness = meshRenderer.material.GetFloat("_Glossiness");
 
-        
         float randomValueR = Random.Range(-0.015f, 0.015f);
         float randomValueG = Random.Range(-0.015f, 0.015f);
         float randomValueB = Random.Range(-0.015f, 0.015f);
 
-        /*
-        //Change currentValue to know where in the process we are.
-        if(positive && currentValue < 1)
-        {
-            currentValue += speedFactor;
-        }
-        if (!positive && currentValue > -1)
-        {
-            currentValue -= speedFactor;
-        }
-        */
-        //Change color depending on where in the process we are.
+        currentValueY = controllerR.localPosition.y / RangeFactorY;
 
-        currentValue = controllerR.localPosition.y;
-        Debug.Log(currentValue);
-        //Backwards: Change value according to difference from start to current value.
-        
-        float differenceSteps;
-
-        if (currentValue > (RZAxis.x + RZAxis.y) / 2)
+        if(RGorB == 0)
         {
-            differenceSteps = currentValue;
-            meshRenderer.material.color = new Color(currentColor.r + (StartColor.r - currentColor.r) / differenceSteps,
-                                                    currentColor.g + (StartColor.g - currentColor.g) / differenceSteps,
-                                                    currentColor.b + (StartColor.b - currentColor.b) / differenceSteps, currentColor.a);
-            meshRenderer.material.SetFloat("_Metallic", currentMetallic + (0 - currentMetallic) / differenceSteps);
-            meshRenderer.material.SetFloat("_Glossiness", currentMetallic + (0 - currentMetallic) / differenceSteps);
-
+            meshRenderer.material.color = new Color(startColor.r + (currentValueY - RStartValueY), startColor.g, startColor.b, currentColor.a);
         }
-        if (currentValue < (RZAxis.x + RZAxis.y) / 2)
+        else if (RGorB == 1)
         {
-            differenceSteps = currentValue;
-            meshRenderer.material.color = new Color(currentColor.r + (StartColor.r - currentColor.r) / differenceSteps,
-                                                    currentColor.g + (StartColor.g - currentColor.g) / differenceSteps,
-                                                    currentColor.b + (StartColor.b - currentColor.b) / differenceSteps, currentColor.a);
-            meshRenderer.material.SetFloat("_Metallic", currentMetallic + (0 - currentMetallic) / differenceSteps);
-            meshRenderer.material.SetFloat("_Glossiness", currentMetallic + (0 - currentMetallic) / differenceSteps);
+            meshRenderer.material.color = new Color(startColor.r, startColor.g + (currentValueY - RStartValueY), startColor.b, currentColor.a);
+        }
+        else if(RGorB == 2)
+        {
+            meshRenderer.material.color = new Color(startColor.r, startColor.g, startColor.b + (currentValueY - RStartValueY), currentColor.a);
         }
 
-        //Forwards: Change value at random.
-        if (currentValue < RZAxis.x && currentValue > (RZAxis.x + RZAxis.y) / 2)
-        {
-            meshRenderer.material.color = new Color(currentColor.r + randomValueR, currentColor.g + randomValueG, currentColor.b + randomValueB, currentColor.a);
-            meshRenderer.material.SetFloat("_Metallic", currentMetallic + Random.Range(0.0015f, 0.0045f));
-            meshRenderer.material.SetFloat("_Glossiness", currentMetallic + Random.Range(0.001f, 0.0025f));
-        }
-        if (currentValue > RZAxis.y && currentValue < (RZAxis.x + RZAxis.y) / 2)
-        {
-            meshRenderer.material.color = new Color(currentColor.r + randomValueR, currentColor.g + randomValueG, currentColor.b + randomValueB, currentColor.a);
-            meshRenderer.material.SetFloat("_Metallic", currentMetallic + Random.Range(0.0015f, 0.0045f));
-            meshRenderer.material.SetFloat("_Glossiness", currentMetallic + Random.Range(0.001f, 0.0025f));
-        }
-        print(currentValue);
+        meshRenderer.material.SetFloat("_Metallic", currentMetallic + (0 - currentMetallic));
+        meshRenderer.material.SetFloat("_Glossiness", currentMetallic + (0 - currentMetallic));
     }
+
+    public void ChangeMateriaTiling()
+    {
+        float currentTilingX = meshRenderer.material.mainTextureScale.x;
+        float currentTilingY = meshRenderer.material.mainTextureScale.y;
+        Vector2 currentTiling = new Vector2(currentTilingX, currentTilingY);
+
+        currentValueX = controllerR.localPosition.x / RangeFactorX;
+
+        meshRenderer.material.mainTextureScale = new Vector2(startTiling.x + (currentValueX - RStartValueX), startTiling.y + (currentValueX - RStartValueX));
+    }
+
+    public void ChangeLights()
+    {
+        if(light == null)
+        {
+            Debug.Log("No light on object");
+            return;
+        }
+        float currentIntensity = light.intensity;
+
+        currentValueZ = controllerR.localPosition.z / RangeFactorZ;
+
+        light.intensity = startIntensity + (currentValueZ - RStartValueZ);
+
+    }
+
 }

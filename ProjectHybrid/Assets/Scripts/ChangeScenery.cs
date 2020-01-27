@@ -10,9 +10,15 @@ public class ChangeScenery : MonoBehaviour
     public Transform RightController;
 
     private List<GameObject> sceneryObjects = new List<GameObject>();
+    private List<GameObject> lights = new List<GameObject>();
     private List<GameObject> randomScenery = new List<GameObject>();
 
-    private void Start()
+    public float RangeFactorX;
+    public float RangeFactorY;
+    public float RangeFactorZ;
+
+
+    private void Awake()
     {
         foreach(GameObject foundObject in GameObject.FindGameObjectsWithTag("Scenery"))
         {
@@ -20,9 +26,28 @@ public class ChangeScenery : MonoBehaviour
             {
                 foundObject.AddComponent(typeof(Scenery));
             }
-            foundObject.GetComponent<Scenery>().controllerL = LeftController;
-            foundObject.GetComponent<Scenery>().controllerR = RightController;
+            Scenery sceneryScript = foundObject.GetComponent<Scenery>();
+            sceneryScript.controllerL = LeftController;
+            sceneryScript.controllerR = RightController;
+            sceneryScript.RangeFactorX = RangeFactorX;
+            sceneryScript.RangeFactorY = RangeFactorY;
+            sceneryScript.RangeFactorZ = RangeFactorZ;
+
+
             sceneryObjects.Add(foundObject);
+        }
+        foreach (GameObject foundObject in GameObject.FindGameObjectsWithTag("Lights"))
+        {
+            if (!foundObject.GetComponent<Scenery>())
+            {
+                foundObject.AddComponent(typeof(Scenery));
+            }
+            Scenery sceneryScript = foundObject.GetComponent<Scenery>();
+            sceneryScript.controllerL = LeftController;
+            sceneryScript.controllerR = RightController;
+            sceneryScript.RangeFactorZ = RangeFactorZ;
+
+            lights.Add(foundObject);
         }
         GetRandomScenery();
     }
@@ -33,7 +58,14 @@ public class ChangeScenery : MonoBehaviour
         foreach (GameObject sObject in sceneryObjects)
         {
             Scenery sceneryScript = sObject.GetComponent<Scenery>();
-            sceneryScript.ChangeMaterialColor(true);
+            sceneryScript.ChangeMaterialColorController();
+            sceneryScript.ChangeMateriaTiling();
+        }
+
+        foreach (GameObject light in lights)
+        {
+            Scenery sceneryScript = light.GetComponent<Scenery>();
+            sceneryScript.ChangeLights();
         }
         //float vertical = Input.GetAxis("Vertical");
 
@@ -52,7 +84,6 @@ public class ChangeScenery : MonoBehaviour
     private void GetRandomScenery()
     {
         randomScenery.Clear();
-        Debug.Log(sceneryObjects.Count);
         foreach (GameObject scenery in sceneryObjects)
         {
             if(Random.Range(0, 101) < Random.Range(60, 90))
@@ -60,6 +91,5 @@ public class ChangeScenery : MonoBehaviour
                 randomScenery.Add(scenery);
             }
         }
-        Debug.Log(randomScenery.Count);
     }
 }
