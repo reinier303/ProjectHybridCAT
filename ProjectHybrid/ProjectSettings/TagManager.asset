@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Scenery
-  - Lights
+  - projectile
+  - FxTemporaire
+  - Test
   layers:
   - Default
   - TransparentFX
