@@ -8,7 +8,9 @@ TagManager:
   - projectile
   - FxTemporaire
   - Test
-  - Controller
+  - Lights
+  - Audio
+  - DistortionVisuals
   layers:
   - Default
   - TransparentFX

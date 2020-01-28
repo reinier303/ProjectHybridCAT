@@ -5,91 +5,204 @@ using UnityEngine;
 public class Scenery : MonoBehaviour
 {
     private MeshRenderer meshRenderer;
-    private Color StartColor;
-    private float currentValue;
+    private Light light;
+    private ParticleSystem particleSystem;
+
     [SerializeField]
     private float speedFactor = 0.003f;
     [SerializeField]
     public Transform controllerR, controllerL;
+    public AudioSource Left, Right;
+
 
     public Vector2 RZAxis = new Vector2(0, 2);
+    //Particle System
+    private ParticleSystem.MinMaxCurve startEmmissionRate;
 
-    //Start     -0.52
+    //Sound
+    private float startPitchL, startPitchR;
+    private float startWetmix, startChorus;
 
-    //POS -0.71
 
-    //NEG - 0.16
+    //Lights
+    private float startIntensity;
 
-    private void Start()
+    //Color
+    int RGorB;
+    private Color startColor;
+
+    //Tiling
+    private Vector2 startTiling;
+
+    //Axis Info
+    private float RcurrentValueX;
+    private float RcurrentValueY;
+    private float RcurrentValueZ;
+
+    private float LcurrentValueX;
+    private float LcurrentValueY;
+    private float LcurrentValueZ;
+
+    public float RStartValueX;
+    public float RStartValueY;
+    public float RStartValueZ;
+
+    public float LStartValueX;
+    public float LStartValueY;
+    public float LStartValueZ;
+
+    public float RangeFactorX;
+    public float RangeFactorY;
+    public float RangeFactorZ;
+
+
+    public ChangeScenery changeScenery;
+
+    public void Initialize()
     {
         meshRenderer = GetComponent<MeshRenderer>();
-        StartColor = meshRenderer.material.color;
-        currentValue = 0;
-    }
+        light = GetComponent<Light>();
+        particleSystem = GetComponent<ParticleSystem>();
 
-    public void ChangeMaterialColor(bool positive)
+        if(particleSystem != null)
+        {
+            startEmmissionRate = particleSystem.emission.rateOverTime;
+        }
+
+        if (Left != null && Right != null)
+        {
+            Left.outputAudioMixerGroup.audioMixer.GetFloat("FlangeRate", out startPitchL);
+            Right.outputAudioMixerGroup.audioMixer.GetFloat("Distortion", out startPitchR);
+            Right.outputAudioMixerGroup.audioMixer.GetFloat("Wetmix", out startWetmix);
+            Left.outputAudioMixerGroup.audioMixer.GetFloat("ChorusDepth", out startChorus);
+        }
+
+        if (light != null)
+        {
+            startIntensity = light.intensity;
+
+        }
+        if (light == null)
+        {
+            ChangeScenery.Instance.lights.Remove(gameObject);
+        }
+
+        if (meshRenderer != null)
+        {
+            if(meshRenderer.material.HasProperty("_Color"))
+            {
+                startColor = meshRenderer.material.color;
+                RGorB = Random.Range(0, 3);
+            }
+            startTiling = meshRenderer.material.mainTextureScale;
+        }
+        if (meshRenderer == null)
+        {
+            ChangeScenery.Instance.sceneryObjects.Remove(gameObject);
+        }
+
+        RStartValueX = controllerR.localPosition.x / RangeFactorX;
+        RStartValueY = controllerR.localPosition.y / RangeFactorY;
+        RStartValueZ = controllerR.localPosition.z / RangeFactorZ;
+
+        LStartValueX = controllerL.localPosition.x / RangeFactorX;
+        LStartValueY = controllerL.localPosition.y / RangeFactorY;
+        LStartValueZ = controllerL.localPosition.z / RangeFactorZ;
+    }
+    
+    //Right Y Axis
+    public void ChangeMaterialColorController()
     {
         Color currentColor = meshRenderer.material.color;
         float currentMetallic = meshRenderer.material.GetFloat("_Metallic");
         float currentSmoothness = meshRenderer.material.GetFloat("_Glossiness");
 
-        
         float randomValueR = Random.Range(-0.015f, 0.015f);
         float randomValueG = Random.Range(-0.015f, 0.015f);
         float randomValueB = Random.Range(-0.015f, 0.015f);
 
-        /*
-        //Change currentValue to know where in the process we are.
-        if(positive && currentValue < 1)
-        {
-            currentValue += speedFactor;
-        }
-        if (!positive && currentValue > -1)
-        {
-            currentValue -= speedFactor;
-        }
-        */
-        //Change color depending on where in the process we are.
+        RcurrentValueY = controllerR.localPosition.y / RangeFactorY;
 
-        currentValue = controllerR.localPosition.y;
-        Debug.Log(currentValue);
-        //Backwards: Change value according to difference from start to current value.
-        
-        float differenceSteps;
-
-        if (currentValue > (RZAxis.x + RZAxis.y) / 2)
+        if(RGorB == 0)
         {
-            differenceSteps = currentValue;
-            meshRenderer.material.color = new Color(currentColor.r + (StartColor.r - currentColor.r) / differenceSteps,
-                                                    currentColor.g + (StartColor.g - currentColor.g) / differenceSteps,
-                                                    currentColor.b + (StartColor.b - currentColor.b) / differenceSteps, currentColor.a);
-            meshRenderer.material.SetFloat("_Metallic", currentMetallic + (0 - currentMetallic) / differenceSteps);
-            meshRenderer.material.SetFloat("_Glossiness", currentMetallic + (0 - currentMetallic) / differenceSteps);
-
+            meshRenderer.material.color = new Color(startColor.r + (RcurrentValueY - RStartValueY), startColor.g, startColor.b, currentColor.a);
         }
-        if (currentValue < (RZAxis.x + RZAxis.y) / 2)
+        else if (RGorB == 1)
         {
-            differenceSteps = currentValue;
-            meshRenderer.material.color = new Color(currentColor.r + (StartColor.r - currentColor.r) / differenceSteps,
-                                                    currentColor.g + (StartColor.g - currentColor.g) / differenceSteps,
-                                                    currentColor.b + (StartColor.b - currentColor.b) / differenceSteps, currentColor.a);
-            meshRenderer.material.SetFloat("_Metallic", currentMetallic + (0 - currentMetallic) / differenceSteps);
-            meshRenderer.material.SetFloat("_Glossiness", currentMetallic + (0 - currentMetallic) / differenceSteps);
+            meshRenderer.material.color = new Color(startColor.r, startColor.g + (RcurrentValueY - RStartValueY), startColor.b, currentColor.a);
+        }
+        else if(RGorB == 2)
+        {
+            meshRenderer.material.color = new Color(startColor.r, startColor.g, startColor.b + (RcurrentValueY - RStartValueY), currentColor.a);
         }
 
-        //Forwards: Change value at random.
-        if (currentValue < RZAxis.x && currentValue > (RZAxis.x + RZAxis.y) / 2)
-        {
-            meshRenderer.material.color = new Color(currentColor.r + randomValueR, currentColor.g + randomValueG, currentColor.b + randomValueB, currentColor.a);
-            meshRenderer.material.SetFloat("_Metallic", currentMetallic + Random.Range(0.0015f, 0.0045f));
-            meshRenderer.material.SetFloat("_Glossiness", currentMetallic + Random.Range(0.001f, 0.0025f));
-        }
-        if (currentValue > RZAxis.y && currentValue < (RZAxis.x + RZAxis.y) / 2)
-        {
-            meshRenderer.material.color = new Color(currentColor.r + randomValueR, currentColor.g + randomValueG, currentColor.b + randomValueB, currentColor.a);
-            meshRenderer.material.SetFloat("_Metallic", currentMetallic + Random.Range(0.0015f, 0.0045f));
-            meshRenderer.material.SetFloat("_Glossiness", currentMetallic + Random.Range(0.001f, 0.0025f));
-        }
-        print(currentValue);
+        meshRenderer.material.SetFloat("_Metallic", currentMetallic + (0 - currentMetallic));
+        meshRenderer.material.SetFloat("_Glossiness", currentMetallic + (0 - currentMetallic));
     }
+
+    //Left Y Axis
+    public void ChangeMateriaTiling()
+    {
+        float currentTilingX = meshRenderer.material.mainTextureScale.x;
+        float currentTilingY = meshRenderer.material.mainTextureScale.y;
+        Vector2 currentTiling = new Vector2(currentTilingX, currentTilingY);
+
+        LcurrentValueY = controllerL.localPosition.y / RangeFactorY;
+
+        meshRenderer.material.mainTextureScale = new Vector2(startTiling.y + (LcurrentValueY - LStartValueY), startTiling.y + (LcurrentValueY - LStartValueY));
+    }
+
+    //Right X Axis
+    public void ChangeLights()
+    {
+        float currentIntensity = light.intensity;
+
+        RcurrentValueX = controllerR.localPosition.x / RangeFactorX;
+
+        light.intensity = startIntensity + (RcurrentValueX - RStartValueX);
+    }
+
+    //Left X Axis
+    public void ChangeSoundLX()
+    {
+        float currentPitchL = Left.pitch;
+        float currentPitchR = Right.pitch;
+
+        LcurrentValueX = controllerL.localPosition.x / RangeFactorX;
+
+        Left.outputAudioMixerGroup.audioMixer.SetFloat("FlangeRate", startPitchL + (LcurrentValueX - LStartValueX));
+        Left.outputAudioMixerGroup.audioMixer.SetFloat("FlangeDepth", startPitchL + (LcurrentValueX - LStartValueX));
+
+        float currentDistortion;
+        Right.outputAudioMixerGroup.audioMixer.GetFloat("Distortion", out currentDistortion);
+        Right.outputAudioMixerGroup.audioMixer.SetFloat("Distortion", startPitchR - (LcurrentValueX - LStartValueX));
+        //Right.pitch = startPitchR - ((LcurrentValueX - LStartValueX));
+
+    }
+
+    //Right Z Axis
+    public void ChangeSoundRZ()
+    {
+        RcurrentValueZ = controllerR.localPosition.z / RangeFactorZ;
+        
+        Right.outputAudioMixerGroup.audioMixer.SetFloat("Wetmix", startWetmix + (RcurrentValueZ - RStartValueZ));
+        Left.outputAudioMixerGroup.audioMixer.SetFloat("ChorusDepth", startChorus - (RcurrentValueZ - RStartValueZ));
+
+        float currentWetmix;
+        Right.outputAudioMixerGroup.audioMixer.GetFloat("Wetmix", out currentWetmix);
+
+    }
+
+    //Left Z Axis
+    public void ChangeParticles()
+    {
+        LcurrentValueZ = controllerL.localPosition.z / RangeFactorZ;
+        float currentEmmisionRate = particleSystem.emission.rateOverTime.constant;
+        var emissionRate = particleSystem.emission.rateOverTime;
+
+        particleSystem.emissionRate = startEmmissionRate.constant + (LcurrentValueZ - LStartValueZ);
+
+
+    }
+
 }
