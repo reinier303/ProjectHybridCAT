@@ -178,10 +178,8 @@ public class Scenery : MonoBehaviour
     {
         RcurrentValueZ = controllerR.localPosition.z / RangeFactorZ;
         
-        print(startWetmix);
         Right.outputAudioMixerGroup.audioMixer.SetFloat("Wetmix", startWetmix + (RcurrentValueZ - RStartValueZ));
         Left.outputAudioMixerGroup.audioMixer.SetFloat("ChorusDepth", startChorus - (RcurrentValueZ - RStartValueZ));
-
 
         float currentWetmix;
         Right.outputAudioMixerGroup.audioMixer.GetFloat("Wetmix", out currentWetmix);
