@@ -12,7 +12,7 @@ public class FissaExample : MonoBehaviour
         //to this object
         AudioProcessor processor = FindObjectOfType<AudioProcessor>();
         //processor.onBeat.AddListener(onOnbeatDetected);
-        processor.onSpectrum.AddListener(onSpectrum);
+       // processor.onSpectrum.AddListener(onSpectrum);
     }
 
     //this event will be called every time a beat is detected.
