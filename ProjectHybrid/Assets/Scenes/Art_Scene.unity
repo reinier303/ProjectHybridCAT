@@ -141,13 +141,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &7703383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -259,13 +265,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &19860942 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 779400941837100755, guid: fe8b8f91404e0ca419979a637f344dec,
@@ -287,13 +299,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &26446854 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1538287920678864008, guid: d0c2afe97de807143b229b41e25944ef,
@@ -315,13 +333,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &33366219 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2522650683556001435, guid: d0c2afe97de807143b229b41e25944ef,
@@ -448,13 +472,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &46637712 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 951356521938001729, guid: 70933f8923cfe7f459fab479632f9bb6,
@@ -476,13 +506,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &53890989
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,11 +548,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e50835dd39d3ab14fb696d8a06db0fd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LeftController: {fileID: 0}
+  LeftController: {fileID: 1118337452}
   RightController: {fileID: 2142376180}
+  sceneryObjects: []
+  lights: []
+  Audio: []
   RangeFactorX: 3
   RangeFactorY: 3
   RangeFactorZ: 3
+  Left: {fileID: 1531707293}
+  Right: {fileID: 1985680469}
 --- !u!4 &53890991
 Transform:
   m_ObjectHideFlags: 0
@@ -680,13 +721,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &66225892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8338203973541969262, guid: f9acbe6a0f8f3f24781811310cf97767,
@@ -805,13 +852,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &95130512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1297,13 +1350,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &170860200 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5038430185027719037, guid: f9acbe6a0f8f3f24781811310cf97767,
@@ -1325,13 +1384,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &176851550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,13 +1600,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &201569903
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2037,13 +2108,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &265468884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2176,13 +2253,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &279163438 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4327721562876080504, guid: 9dee344899e1ef544aa8a864f6f943f1,
@@ -2226,13 +2309,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &288804283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2338,169 +2427,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 288804283}
   m_PrefabAsset: {fileID: 0}
---- !u!43 &335660588
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 24
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 8
-    localAABB:
-      m_Center: {x: 0, y: 0.01, z: 0}
-      m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 8
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 288
-    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0.01, z: 0}
-    m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &336353850 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 779400941837100755, guid: fe8b8f91404e0ca419979a637f344dec,
@@ -2522,13 +2448,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &341147448 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8687935733465001045, guid: acb3d6212ab1b8f40bf537d5b3f4ee77,
@@ -2550,13 +2482,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &345475451 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5384007774892814071, guid: b7e03fcfe92649e42a1042703b5b49c6,
@@ -2578,13 +2516,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &355554789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2842,13 +2786,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &358321080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2975,13 +2925,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &367657990 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5384007774892814071, guid: b7e03fcfe92649e42a1042703b5b49c6,
@@ -3003,13 +2959,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &372549582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3227,13 +3189,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &383043500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 7758f48e65671e349848e60d89188cf4,
@@ -3261,13 +3229,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &420654315 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4157433107107101886, guid: 1ca22a3070b7445459a7eb8eef16e729,
@@ -3289,13 +3263,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &420921464 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4327721562876080504, guid: 9dee344899e1ef544aa8a864f6f943f1,
@@ -3339,13 +3319,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &426382991
 GameObject:
   m_ObjectHideFlags: 0
@@ -3445,13 +3431,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &429635526
 GameObject:
   m_ObjectHideFlags: 0
@@ -3546,13 +3538,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &436320413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3669,13 +3667,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &452340410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3886,13 +3890,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &510261164 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 779400941837100755, guid: fe8b8f91404e0ca419979a637f344dec,
@@ -3914,13 +3924,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &517197605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4037,13 +4053,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &518834903
 GameObject:
   m_ObjectHideFlags: 0
@@ -4473,13 +4495,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &544700502 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2866776383118508454, guid: 9dee344899e1ef544aa8a864f6f943f1,
@@ -4523,13 +4551,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &553045279 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3004673649670750139, guid: 25bc40b736ac3af4a94d9312c7627dd6,
@@ -4648,13 +4682,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &572457862 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5038430185027719037, guid: f9acbe6a0f8f3f24781811310cf97767,
@@ -4676,13 +4716,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &580413750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4892,13 +4938,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &620233576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5116,13 +5168,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &625340390
 GameObject:
   m_ObjectHideFlags: 0
@@ -5421,13 +5479,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &658543407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5749,13 +5813,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &672771085 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 779400941837100755, guid: fe8b8f91404e0ca419979a637f344dec,
@@ -5777,13 +5847,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &675908372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5976,13 +6052,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &688409820
 GameObject:
   m_ObjectHideFlags: 0
@@ -6185,13 +6267,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -6283,6 +6371,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &714663435 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 892928851}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &717849903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2372cddabd877b34a9362603d386118f,
@@ -6304,13 +6398,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &720846527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6626,13 +6726,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &745104116 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2299623188923878824, guid: 25bc40b736ac3af4a94d9312c7627dd6,
@@ -6654,13 +6760,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &761402477 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4327721562876080504, guid: 9dee344899e1ef544aa8a864f6f943f1,
@@ -6704,13 +6816,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &763513404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6821,13 +6939,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &771507886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7038,13 +7162,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &798547191
 GameObject:
   m_ObjectHideFlags: 0
@@ -7557,13 +7687,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &859467373 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4157433107107101886, guid: 1ca22a3070b7445459a7eb8eef16e729,
@@ -7585,13 +7721,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &862416263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7798,13 +7940,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &890964067 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 779400941837100755, guid: fe8b8f91404e0ca419979a637f344dec,
@@ -7826,13 +7974,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &892708302 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2299623188923878824, guid: 25bc40b736ac3af4a94d9312c7627dd6,
@@ -7854,13 +8008,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &892928851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7923,11 +8083,11 @@ PrefabInstance:
     - target: {fileID: 2348914, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 983391088}
+      objectReference: {fileID: 1095474198}
     - target: {fileID: 3380982, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 335660588}
+      objectReference: {fileID: 1408988288}
     - target: {fileID: 1000014254142504, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
       propertyPath: m_TagString
       value: Test
@@ -7970,13 +8130,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &911076008
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8110,13 +8276,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &920559969 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5038430185027719037, guid: f9acbe6a0f8f3f24781811310cf97767,
@@ -8138,13 +8310,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &924795706 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8338203973541969262, guid: f9acbe6a0f8f3f24781811310cf97767,
@@ -8194,13 +8372,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &938074070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8306,13 +8490,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &953013698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8434,13 +8624,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &976646667 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2299623188923878824, guid: 25bc40b736ac3af4a94d9312c7627dd6,
@@ -8462,13 +8658,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &978170618
 GameObject:
   m_ObjectHideFlags: 0
@@ -8564,13 +8766,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &981889092 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6330930619858559861, guid: ff2a06a82abd6d04296753e049baff67,
@@ -8592,47 +8800,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
---- !u!21 &983391088
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  changeScenery: {fileID: 0}
 --- !u!1001 &993702020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8968,13 +9148,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1026722550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9124,13 +9310,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1028672872
 GameObject:
   m_ObjectHideFlags: 0
@@ -9419,13 +9611,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &1049672531 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4280878633818221906, guid: 70933f8923cfe7f459fab479632f9bb6,
@@ -9711,13 +9909,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1093411351
 GameObject:
   m_ObjectHideFlags: 0
@@ -9826,13 +10030,53 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
+--- !u!21 &1095474198
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1098577740 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 622400002861645900, guid: d09a9d50528776c49acf296a9569b8cc,
@@ -9854,19 +10098,117 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &1109648744 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1146573726167846573, guid: 1ca22a3070b7445459a7eb8eef16e729,
     type: 3}
   m_PrefabInstance: {fileID: 771507886}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1118337448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1118337452}
+  - component: {fileID: 1118337451}
+  - component: {fileID: 1118337450}
+  - component: {fileID: 1118337449}
+  m_Layer: 0
+  m_Name: CubeL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1118337449
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118337448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1118337450
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118337448}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1118337451
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118337448}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1118337452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118337448}
+  m_LocalRotation: {x: -0, y: 0.021825755, z: -0, w: -0.9997618}
+  m_LocalPosition: {x: 3.68, y: -1.0600002, z: 2.39}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 714663435}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1120516682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10312,13 +10654,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1170853747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10545,13 +10893,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1191430399
 GameObject:
   m_ObjectHideFlags: 0
@@ -10665,13 +11019,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1252266105 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5038430185027719037, guid: f9acbe6a0f8f3f24781811310cf97767,
@@ -10693,13 +11053,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1253476433 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4157433107107101886, guid: 1ca22a3070b7445459a7eb8eef16e729,
@@ -10721,13 +11087,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1256490079 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4157433107107101886, guid: 1ca22a3070b7445459a7eb8eef16e729,
@@ -10749,13 +11121,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1266829103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11145,13 +11523,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1353768056 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 779400941837100755, guid: fe8b8f91404e0ca419979a637f344dec,
@@ -11173,13 +11557,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1359584782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11556,13 +11946,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1379749974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11694,13 +12090,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1397429362
 GameObject:
   m_ObjectHideFlags: 0
@@ -11835,13 +12237,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1408411945 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8687935733465001045, guid: acb3d6212ab1b8f40bf537d5b3f4ee77,
@@ -11863,13 +12271,182 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
+--- !u!43 &1408988288
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 8
+    localAABB:
+      m_Center: {x: 0, y: 0.01, z: 0}
+      m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 8
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 288
+    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.01, z: 0}
+    m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1001 &1410882455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12200,13 +12777,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1476767222 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8687935733465001045, guid: acb3d6212ab1b8f40bf537d5b3f4ee77,
@@ -12228,13 +12811,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1482749394
 GameObject:
   m_ObjectHideFlags: 0
@@ -12353,13 +12942,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &1497459962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1477409752788588250, guid: fe8b8f91404e0ca419979a637f344dec,
@@ -12387,13 +12982,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1509931825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12689,6 +13290,134 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1522411026}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1531707292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531707294}
+  - component: {fileID: 1531707293}
+  m_Layer: 0
+  m_Name: LeftMusic
+  m_TagString: Audio
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1531707293
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531707292}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -5710854633212148357, guid: ec12f7772c03e4c4c9e4c2f1643595ad,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 195e55d5021506849b8a9523483fa5de, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1531707294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531707292}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.7924037, y: 4.2924833, z: -24.522146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1531780302 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1477409752788588250, guid: fe8b8f91404e0ca419979a637f344dec,
@@ -13009,13 +13738,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1569764921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13126,13 +13861,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1575448246 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 951356521938001729, guid: 70933f8923cfe7f459fab479632f9bb6,
@@ -13154,13 +13895,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1580135252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13371,13 +14118,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1606801664 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5384007774892814071, guid: b7e03fcfe92649e42a1042703b5b49c6,
@@ -13399,13 +14152,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1607605198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13611,13 +14370,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1632692272 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2372cddabd877b34a9362603d386118f,
@@ -13639,13 +14404,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1634377193 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4157433107107101886, guid: 1ca22a3070b7445459a7eb8eef16e729,
@@ -13667,13 +14438,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1649111334 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4327721562876080504, guid: 9dee344899e1ef544aa8a864f6f943f1,
@@ -13717,13 +14494,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1663002932
 GameObject:
   m_ObjectHideFlags: 0
@@ -13836,13 +14619,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1667228768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13959,13 +14748,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1679403201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14081,13 +14876,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1699569166 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6330930619858559861, guid: ff2a06a82abd6d04296753e049baff67,
@@ -14109,13 +14910,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1705699145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14316,13 +15123,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1710268853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14523,13 +15336,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1762451352 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3892194217832995018, guid: 3cc755aafcbad7b459a87349e051cf6d,
@@ -14551,13 +15370,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1763692630
 GameObject:
   m_ObjectHideFlags: 0
@@ -14653,13 +15478,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1792087005 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5038430185027719037, guid: f9acbe6a0f8f3f24781811310cf97767,
@@ -14681,13 +15512,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1794091454 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4327721562876080504, guid: 9dee344899e1ef544aa8a864f6f943f1,
@@ -14709,13 +15546,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &1794091457 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2866776383118508454, guid: 9dee344899e1ef544aa8a864f6f943f1,
@@ -14854,13 +15697,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1815522398
 GameObject:
   m_ObjectHideFlags: 0
@@ -15033,13 +15882,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &1823285681 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8338203973541969262, guid: f9acbe6a0f8f3f24781811310cf97767,
@@ -15067,13 +15922,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1827926632
 GameObject:
   m_ObjectHideFlags: 0
@@ -15413,13 +16274,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1851629896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15542,13 +16409,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1878747393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15627,13 +16500,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1891805428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16054,13 +16933,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1902873825
 GameObject:
   m_ObjectHideFlags: 0
@@ -16173,13 +17058,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1927718161 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 635092352187137948, guid: 3c698b6f08d5a444091fdeee684d93c3,
@@ -16201,13 +17092,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1946433673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16409,13 +17306,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1953651526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16532,13 +17435,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1960058143
 GameObject:
   m_ObjectHideFlags: 0
@@ -16786,6 +17695,134 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982490276}
   m_Mesh: {fileID: 6121590469811200223, guid: b718e60b9ed108448a70b8f7d1558089, type: 3}
+--- !u!1 &1985680468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1985680470}
+  - component: {fileID: 1985680469}
+  m_Layer: 0
+  m_Name: RightMusic
+  m_TagString: Audio
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1985680469
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985680468}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -65955756106561032, guid: ec12f7772c03e4c4c9e4c2f1643595ad,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: f42ffe3110a88f24faff02ccb97ab24c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1985680470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985680468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.7924037, y: 4.2924833, z: -24.522146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1993705784 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5384007774892814071, guid: b7e03fcfe92649e42a1042703b5b49c6,
@@ -16807,13 +17844,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1996553198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1538287920678864008, guid: d0c2afe97de807143b229b41e25944ef,
@@ -16835,13 +17878,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1998405968 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 779400941837100755, guid: fe8b8f91404e0ca419979a637f344dec,
@@ -16863,13 +17912,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &2003448866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17070,13 +18125,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &2024137662 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4157433107107101886, guid: 1ca22a3070b7445459a7eb8eef16e729,
@@ -17098,13 +18159,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &2035312116
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17300,13 +18367,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &2053965337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2866776383118508454, guid: 9dee344899e1ef544aa8a864f6f943f1,
@@ -17795,13 +18868,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &2078237921 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1686136038980781627, guid: 88c441d2041097a4fa9d6e969f0e9427,
@@ -17823,13 +18902,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &2090822320 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 2372cddabd877b34a9362603d386118f,
@@ -17956,13 +19041,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &2105733970 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1538287920678864008, guid: d0c2afe97de807143b229b41e25944ef,
@@ -17984,13 +19075,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &2118625111 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1146573726167846573, guid: 1ca22a3070b7445459a7eb8eef16e729,
@@ -18018,13 +19115,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &2131078401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18331,13 +19434,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &2142376176
 GameObject:
   m_ObjectHideFlags: 0
@@ -18351,7 +19460,7 @@ GameObject:
   - component: {fileID: 2142376178}
   - component: {fileID: 2142376177}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: CubeR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18423,12 +19532,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142376176}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5056466, y: 2.95, z: -22.86}
+  m_LocalRotation: {x: -0, y: 0.021825755, z: -0, w: -0.9997618}
+  m_LocalPosition: {x: 6.3309035, y: -1.0600002, z: 2.5086772}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 714663435}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7421664722045684
 MeshFilter:
@@ -18794,13 +19903,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &951356521601181761
 GameObject:
   m_ObjectHideFlags: 0
@@ -18833,13 +19948,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!23 &1012961440309623544
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18934,13 +20055,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!33 &1111686124690502225
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18997,13 +20124,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &1222219424599360664
 GameObject:
   m_ObjectHideFlags: 0
@@ -19246,13 +20379,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &1621458812938086653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19737,13 +20876,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &2069744310621891828
 GameObject:
   m_ObjectHideFlags: 0
@@ -19826,13 +20971,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &2299623188892042475
 GameObject:
   m_ObjectHideFlags: 0
@@ -19865,13 +21016,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1001 &2355069693558554645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20081,13 +21238,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &2522650682079630089
 Transform:
   m_ObjectHideFlags: 0
@@ -21178,13 +22341,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!33 &4190420956626809768
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -21340,13 +22509,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &4349825669773858644 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1432951364122697098, guid: b7e03fcfe92649e42a1042703b5b49c6,
@@ -21447,13 +22622,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!33 &4658968475045887215
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -21681,13 +22862,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &5038430184033800562
 GameObject:
   m_ObjectHideFlags: 0
@@ -21720,13 +22907,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &5038430184904386636
 GameObject:
   m_ObjectHideFlags: 0
@@ -21759,13 +22952,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!33 &5223231625647598884
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -21846,13 +23045,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &5413844122707737784
 Transform:
   m_ObjectHideFlags: 0
@@ -22177,13 +23382,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &6081769648661915190
 GameObject:
   m_ObjectHideFlags: 0
@@ -22307,13 +23518,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &6352835449371359076
 GameObject:
   m_ObjectHideFlags: 0
@@ -22408,13 +23625,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!33 &6840455079764950468
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -22631,13 +23854,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &7183277591844961355
 GameObject:
   m_ObjectHideFlags: 0
@@ -22672,13 +23901,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!33 &7407355819723591177
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -23240,13 +24475,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!33 &8052168152244107153
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -23297,13 +24538,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &8181325590028841869
 GameObject:
   m_ObjectHideFlags: 0
@@ -23421,13 +24668,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!1 &8296172669448417399
 GameObject:
   m_ObjectHideFlags: 0
@@ -23460,13 +24713,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &8338203973668444767
 Transform:
   m_ObjectHideFlags: 0
@@ -23653,13 +24912,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &8722336399924590977
 Transform:
   m_ObjectHideFlags: 0
@@ -23864,13 +25129,19 @@ MonoBehaviour:
   speedFactor: 0.003
   controllerR: {fileID: 0}
   controllerL: {fileID: 0}
+  Left: {fileID: 0}
+  Right: {fileID: 0}
   RZAxis: {x: 0, y: 2}
   RStartValueX: 0
   RStartValueY: 0
   RStartValueZ: 0
+  LStartValueX: 0
+  LStartValueY: 0
+  LStartValueZ: 0
   RangeFactorX: 0
   RangeFactorY: 0
   RangeFactorZ: 0
+  changeScenery: {fileID: 0}
 --- !u!4 &9128444060217460337
 Transform:
   m_ObjectHideFlags: 0

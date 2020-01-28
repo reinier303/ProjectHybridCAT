@@ -9,6 +9,7 @@ TagManager:
   - FxTemporaire
   - Test
   - Lights
+  - Audio
   layers:
   - Default
   - TransparentFX
