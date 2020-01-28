@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using Bas;
 
 public class HintsManager : MonoBehaviour
 {
@@ -31,7 +32,8 @@ public class HintsManager : MonoBehaviour
     private IEnumerator ShowText(float time)
     {
         IntroFeedbackTextField.text = IntroFeedbackTextString;
-        yield return new WaitForSeconds(time);
+        yield return new WaitForSeconds(5f);
+        //Globals.OnFissaInitializeHandler();
         activateText = true;
 
     }

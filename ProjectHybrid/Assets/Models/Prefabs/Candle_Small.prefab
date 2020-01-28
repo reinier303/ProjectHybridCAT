@@ -91,6 +91,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DistortianSmoke
       objectReference: {fileID: 0}
+    - target: {fileID: 4787404439057596526, guid: 2e1472b63a05d27468c58752d913aace,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4790886884512617782, guid: 2e1472b63a05d27468c58752d913aace,
         type: 3}
       propertyPath: m_LocalPosition.x

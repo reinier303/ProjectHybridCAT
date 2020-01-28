@@ -8,6 +8,9 @@ namespace Bas
     {
         public delegate void OnControllerPositionUpdate(Vector3 position);
         public static OnControllerPositionUpdate OnControllerPositionUpdateHandler;
+
+        public delegate void OnFissaInitialize();
+        public static OnFissaInitialize OnFissaInitializeHandler;
     }
 }
 
