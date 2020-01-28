@@ -10,6 +10,7 @@ TagManager:
   - Test
   - Lights
   - Audio
+  - DistortionVisuals
   layers:
   - Default
   - TransparentFX

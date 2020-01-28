@@ -12,6 +12,10 @@ public class ChangeScenery : MonoBehaviour
     public List<GameObject> sceneryObjects = new List<GameObject>();
     public List<GameObject> lights = new List<GameObject>();
     public List<GameObject> Audio = new List<GameObject>();
+    public List<GameObject> DistortionObjects = new List<GameObject>();
+    public List<GameObject> Particles = new List<GameObject>();
+
+
     private List<GameObject> randomScenery = new List<GameObject>();
 
     public float RangeFactorX;
@@ -22,6 +26,7 @@ public class ChangeScenery : MonoBehaviour
 
     public static ChangeScenery Instance;
 
+    public MeshRenderer tripMesh;
 
     private void Awake()
     {
@@ -84,6 +89,46 @@ public class ChangeScenery : MonoBehaviour
             sceneryScript.Initialize();
 
         }
+
+        foreach (GameObject foundObject in DistortionObjects)
+        {
+            if (!foundObject.GetComponent<Scenery>())
+            {
+                foundObject.AddComponent(typeof(Scenery));
+            }
+            Scenery sceneryScript = foundObject.GetComponent<Scenery>();
+            sceneryScript.controllerL = LeftController;
+            sceneryScript.controllerR = RightController;
+            sceneryScript.RangeFactorX = RangeFactorX;
+            sceneryScript.RangeFactorY = RangeFactorY;
+            sceneryScript.RangeFactorZ = RangeFactorZ;
+
+            sceneryScript.Left = Left;
+            sceneryScript.Right = Right;
+
+            sceneryScript.Initialize();
+
+        }
+
+        foreach (GameObject foundObject in Particles)
+        {
+            if (!foundObject.GetComponent<Scenery>())
+            {
+                foundObject.AddComponent(typeof(Scenery));
+            }
+            Scenery sceneryScript = foundObject.GetComponent<Scenery>();
+            sceneryScript.controllerL = LeftController;
+            sceneryScript.controllerR = RightController;
+            sceneryScript.RangeFactorX = RangeFactorX;
+            sceneryScript.RangeFactorY = RangeFactorY;
+            sceneryScript.RangeFactorZ = RangeFactorZ;
+
+            sceneryScript.Left = Left;
+            sceneryScript.Right = Right;
+
+            sceneryScript.Initialize();
+
+        }
         GetRandomScenery();
     }
 
@@ -94,7 +139,6 @@ public class ChangeScenery : MonoBehaviour
         {
             Scenery sceneryScript = sObject.GetComponent<Scenery>();
             sceneryScript.ChangeMaterialColorController();
-            sceneryScript.ChangeMateriaTiling();
         }
 
         foreach (GameObject light in lights)
@@ -108,7 +152,16 @@ public class ChangeScenery : MonoBehaviour
             Scenery sceneryScript = audio.GetComponent<Scenery>();
             sceneryScript.ChangeSoundLX();
             sceneryScript.ChangeSoundRZ();
-
+        }
+        foreach (GameObject distortion in DistortionObjects)
+        {
+            Scenery sceneryScript = distortion.GetComponent<Scenery>();
+            sceneryScript.ChangeMateriaTiling();
+        }
+        foreach (GameObject particle in Particles)
+        {
+            Scenery sceneryScript = particle.GetComponent<Scenery>();
+            sceneryScript.ChangeParticles();
         }
     }
 

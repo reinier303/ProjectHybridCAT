@@ -6,6 +6,7 @@ public class Scenery : MonoBehaviour
 {
     private MeshRenderer meshRenderer;
     private Light light;
+    private ParticleSystem particleSystem;
 
     [SerializeField]
     private float speedFactor = 0.003f;
@@ -15,6 +16,8 @@ public class Scenery : MonoBehaviour
 
 
     public Vector2 RZAxis = new Vector2(0, 2);
+    //Particle System
+    private ParticleSystem.MinMaxCurve startEmmissionRate;
 
     //Sound
     private float startPitchL, startPitchR;
@@ -54,28 +57,30 @@ public class Scenery : MonoBehaviour
 
 
     public ChangeScenery changeScenery;
-    //Start     -0.52
-
-    //POS -0.71
-
-    //NEG - 0.16
 
     public void Initialize()
     {
         meshRenderer = GetComponent<MeshRenderer>();
         light = GetComponent<Light>();
-        if(Left != null && Right != null)
+        particleSystem = GetComponent<ParticleSystem>();
+
+        if(particleSystem != null)
+        {
+            startEmmissionRate = particleSystem.emission.rateOverTime;
+        }
+
+        if (Left != null && Right != null)
         {
             Left.outputAudioMixerGroup.audioMixer.GetFloat("FlangeRate", out startPitchL);
             Right.outputAudioMixerGroup.audioMixer.GetFloat("Distortion", out startPitchR);
             Right.outputAudioMixerGroup.audioMixer.GetFloat("Wetmix", out startWetmix);
             Left.outputAudioMixerGroup.audioMixer.GetFloat("ChorusDepth", out startChorus);
-
         }
 
         if (light != null)
         {
             startIntensity = light.intensity;
+
         }
         if (light == null)
         {
@@ -84,12 +89,14 @@ public class Scenery : MonoBehaviour
 
         if (meshRenderer != null)
         {
+            if(meshRenderer.material.HasProperty("_Color"))
+            {
+                startColor = meshRenderer.material.color;
+                RGorB = Random.Range(0, 3);
+            }
             startTiling = meshRenderer.material.mainTextureScale;
-
-            startColor = meshRenderer.material.color;
-            RGorB = Random.Range(0, 3);
         }
-        if(meshRenderer == null)
+        if (meshRenderer == null)
         {
             ChangeScenery.Instance.sceneryObjects.Remove(gameObject);
         }
@@ -142,7 +149,7 @@ public class Scenery : MonoBehaviour
 
         LcurrentValueY = controllerL.localPosition.y / RangeFactorY;
 
-        meshRenderer.material.mainTextureScale = new Vector2(startTiling.y + (RcurrentValueY - LStartValueY), startTiling.y + (RcurrentValueY - LStartValueY));
+        meshRenderer.material.mainTextureScale = new Vector2(startTiling.y + (LcurrentValueY - LStartValueY), startTiling.y + (LcurrentValueY - LStartValueY));
     }
 
     //Right X Axis
@@ -183,6 +190,18 @@ public class Scenery : MonoBehaviour
 
         float currentWetmix;
         Right.outputAudioMixerGroup.audioMixer.GetFloat("Wetmix", out currentWetmix);
+
+    }
+
+    //Left Z Axis
+    public void ChangeParticles()
+    {
+        LcurrentValueZ = controllerL.localPosition.z / RangeFactorZ;
+        float currentEmmisionRate = particleSystem.emission.rateOverTime.constant;
+        var emissionRate = particleSystem.emission.rateOverTime;
+
+        particleSystem.emissionRate = startEmmissionRate.constant + (LcurrentValueZ - LStartValueZ);
+
 
     }
 
