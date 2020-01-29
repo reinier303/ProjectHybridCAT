@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Scenery : MonoBehaviour
 {
+    [SerializeField]
+    private float FriendTransparency;
+
     private MeshRenderer meshRenderer;
     private Light light;
     private ParticleSystem particleSystem;
@@ -22,7 +25,6 @@ public class Scenery : MonoBehaviour
     //Sound
     private float startPitchL, startPitchR;
     private float startWetmix, startChorus;
-
 
     //Lights
     private float startIntensity;
@@ -63,8 +65,9 @@ public class Scenery : MonoBehaviour
         meshRenderer = GetComponent<MeshRenderer>();
         light = GetComponent<Light>();
         particleSystem = GetComponent<ParticleSystem>();
+        changeScenery = ChangeScenery.Instance;
 
-        if(particleSystem != null)
+        if (particleSystem != null)
         {
             startEmmissionRate = particleSystem.emission.rateOverTime;
         }
@@ -138,6 +141,9 @@ public class Scenery : MonoBehaviour
 
         meshRenderer.material.SetFloat("_Metallic", currentMetallic + (0 - currentMetallic));
         meshRenderer.material.SetFloat("_Glossiness", currentMetallic + (0 - currentMetallic));
+
+        CheckIfSweetSpot(RStartValueY, RcurrentValueY, RangeFactorY, changeScenery.RYAxisSweet, "RY");
+
     }
 
     //Left Y Axis
@@ -150,6 +156,8 @@ public class Scenery : MonoBehaviour
         LcurrentValueY = controllerL.localPosition.y / RangeFactorY;
 
         meshRenderer.material.mainTextureScale = new Vector2(startTiling.y + (LcurrentValueY - LStartValueY), startTiling.y + (LcurrentValueY - LStartValueY));
+
+        CheckIfSweetSpot(LStartValueY, LcurrentValueY, RangeFactorY, changeScenery.LYAxisSweet, "LY");
     }
 
     //Right X Axis
@@ -160,6 +168,8 @@ public class Scenery : MonoBehaviour
         RcurrentValueX = controllerR.localPosition.x / RangeFactorX;
 
         light.intensity = startIntensity + (RcurrentValueX - RStartValueX);
+
+        CheckIfSweetSpot(RStartValueX, RcurrentValueX, RangeFactorX, changeScenery.RXAxisSweet, "RX");
     }
 
     //Left X Axis
@@ -178,6 +188,7 @@ public class Scenery : MonoBehaviour
         Right.outputAudioMixerGroup.audioMixer.SetFloat("Distortion", startPitchR - (LcurrentValueX - LStartValueX));
         //Right.pitch = startPitchR - ((LcurrentValueX - LStartValueX));
 
+        CheckIfSweetSpot(LStartValueX, LcurrentValueX, RangeFactorX, changeScenery.LXAxisSweet, "LX");
     }
 
     //Right Z Axis
@@ -191,6 +202,7 @@ public class Scenery : MonoBehaviour
         float currentWetmix;
         Right.outputAudioMixerGroup.audioMixer.GetFloat("Wetmix", out currentWetmix);
 
+        CheckIfSweetSpot(RStartValueZ, RcurrentValueZ, RangeFactorZ, changeScenery.RZAxisSweet, "RZ");
     }
 
     //Left Z Axis
@@ -200,9 +212,111 @@ public class Scenery : MonoBehaviour
         float currentEmmisionRate = particleSystem.emission.rateOverTime.constant;
         var emissionRate = particleSystem.emission.rateOverTime;
 
+        //Unity Obsolete warning is not correct || this works instead of non-obsolete alternative.
         particleSystem.emissionRate = startEmmissionRate.constant + (LcurrentValueZ - LStartValueZ);
 
+        CheckIfSweetSpot(LStartValueZ, LcurrentValueZ, RangeFactorZ, changeScenery.LZAxisSweet, "LZ");
 
     }
 
+    private void CheckIfSweetSpot(float startValue, float currentValue, float rangeValue, bool axisSweet, string AxisBool)
+    {
+        if (currentValue < (-rangeValue / 10 + startValue) || currentValue > (rangeValue / 10 + startValue) && axisSweet)
+        {
+            switch (AxisBool)
+            {
+                case "LX":
+                    {
+                        if(changeScenery.LXAxisSweet)
+                        {
+                            changeScenery.ChangeTransparency(-1f / 6);
+                            changeScenery.LXAxisSweet = false;
+                        }
+                        break;
+                    }
+                case "LY":
+                    {
+                        if (changeScenery.LYAxisSweet)
+                        {
+                            changeScenery.ChangeTransparency(-1f / 6);
+                            changeScenery.LYAxisSweet = false;
+                        }
+                        break;
+                    }
+                case "LZ":
+                    {
+                        if (changeScenery.LZAxisSweet)
+                        {
+                            changeScenery.ChangeTransparency(-1f / 6);
+                            changeScenery.LZAxisSweet = false;
+                        }
+                        break;
+                    }
+                case "RX":
+                    {
+                        if (changeScenery.RXAxisSweet)
+                        {
+                            changeScenery.ChangeTransparency(-1f / 6);
+                            changeScenery.RXAxisSweet = false;
+                        }
+                        break;
+                    }
+                case "RY":
+                    {
+                        if (changeScenery.RYAxisSweet)
+                        {
+                            changeScenery.ChangeTransparency(-1f / 6);
+                            changeScenery.RYAxisSweet = false;
+                        }
+                        break;
+                    }
+                case "RZ":
+                    {
+                        if (changeScenery.RZAxisSweet)
+                        {
+                            changeScenery.ChangeTransparency(-1f / 6);
+                            changeScenery.RZAxisSweet = false;
+                        }
+                        break;
+                    }
+            }
+        }
+        else if (currentValue > (-rangeValue / 10 + startValue) && currentValue < (rangeValue / 10 + startValue) && !axisSweet)
+        {
+            changeScenery.ChangeTransparency(1f / 6);
+            switch (AxisBool)
+            {
+                case "LX":
+                    {
+                        changeScenery.LXAxisSweet = true;
+                        break;
+                    }
+                case "LY":
+                    {
+                        changeScenery.LYAxisSweet = true;
+                        break;
+                    }
+                case "LZ":
+                    {
+                        changeScenery.LZAxisSweet = true;
+                        break;
+                    }
+                case "RX":
+                    {
+                        changeScenery.RXAxisSweet = true;
+                        break;
+                    }
+                case "RY":
+                    {
+                        changeScenery.RYAxisSweet = true;
+                        break;
+                    }
+                case "RZ":
+                    {
+                        changeScenery.RZAxisSweet = true;
+                        break;
+                    }
+            }
+        }
+    }
 }

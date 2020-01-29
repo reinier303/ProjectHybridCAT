@@ -28,9 +28,20 @@ public class ChangeScenery : MonoBehaviour
 
     public MeshRenderer tripMesh;
 
+    public float FriendTransparency;
+    public bool LXAxisSweet, LYAxisSweet, LZAxisSweet, RXAxisSweet, RYAxisSweet, RZAxisSweet;
+
+    public MeshRenderer FriendMaterial;
+
     private void Awake()
     {
         Instance = this;
+        LXAxisSweet = false;
+        LYAxisSweet = false;
+        LZAxisSweet = false;
+        RXAxisSweet = false;
+        RYAxisSweet = false;
+        RZAxisSweet = false;
         foreach (GameObject foundObject in GameObject.FindGameObjectsWithTag("Scenery"))
         {
             if(!foundObject.GetComponent<Scenery>())
@@ -175,5 +186,12 @@ public class ChangeScenery : MonoBehaviour
                 randomScenery.Add(scenery);
             }
         }
+    }
+
+    public void ChangeTransparency(float value)
+    {
+        FriendTransparency += value;
+        Color currentColor = FriendMaterial.material.color;
+        FriendMaterial.material.color = new Color(currentColor.r,currentColor.g,currentColor.b,FriendTransparency);
     }
 }
