@@ -28,9 +28,19 @@ public class ChangeScenery : MonoBehaviour
 
     public MeshRenderer tripMesh;
 
+    public float FriendTransparency;
+    public bool LXAxisSweet, LYAxisSweet, LZAxisSweet, RXAxisSweet, RYAxisSweet, RZAxisSweet;
+
+
     private void Awake()
     {
         Instance = this;
+        LXAxisSweet = false;
+        LYAxisSweet = false;
+        LZAxisSweet = false;
+        RXAxisSweet = false;
+        RYAxisSweet = false;
+        RZAxisSweet = false;
         foreach (GameObject foundObject in GameObject.FindGameObjectsWithTag("Scenery"))
         {
             if(!foundObject.GetComponent<Scenery>())
