@@ -223,44 +223,67 @@ public class Scenery : MonoBehaviour
     {
         if (currentValue < (-rangeValue / 10 + startValue) || currentValue > (rangeValue / 10 + startValue) && axisSweet)
         {
-            changeScenery.FriendTransparency -= 1f / 6;
             switch (AxisBool)
             {
                 case "LX":
                     {
-                        changeScenery.LXAxisSweet = false;
+                        if(changeScenery.LXAxisSweet)
+                        {
+                            changeScenery.ChangeTransparency(-1f / 6);
+                            changeScenery.LXAxisSweet = false;
+                        }
                         break;
                     }
                 case "LY":
                     {
-                        changeScenery.LYAxisSweet = false;
+                        if (changeScenery.LYAxisSweet)
+                        {
+                            changeScenery.ChangeTransparency(-1f / 6);
+                            changeScenery.LYAxisSweet = false;
+                        }
                         break;
                     }
                 case "LZ":
                     {
-                        changeScenery.LZAxisSweet = false;
+                        if (changeScenery.LZAxisSweet)
+                        {
+                            changeScenery.ChangeTransparency(-1f / 6);
+                            changeScenery.LZAxisSweet = false;
+                        }
                         break;
                     }
                 case "RX":
                     {
-                        changeScenery.RXAxisSweet = false;
+                        if (changeScenery.RXAxisSweet)
+                        {
+                            changeScenery.ChangeTransparency(-1f / 6);
+                            changeScenery.RXAxisSweet = false;
+                        }
                         break;
                     }
                 case "RY":
                     {
-                        changeScenery.RYAxisSweet = false;
+                        if (changeScenery.RYAxisSweet)
+                        {
+                            changeScenery.ChangeTransparency(-1f / 6);
+                            changeScenery.RYAxisSweet = false;
+                        }
                         break;
                     }
                 case "RZ":
                     {
-                        changeScenery.RZAxisSweet = false;
+                        if (changeScenery.RZAxisSweet)
+                        {
+                            changeScenery.ChangeTransparency(-1f / 6);
+                            changeScenery.RZAxisSweet = false;
+                        }
                         break;
                     }
             }
         }
         else if (currentValue > (-rangeValue / 10 + startValue) && currentValue < (rangeValue / 10 + startValue) && !axisSweet)
         {
-            changeScenery.FriendTransparency += 1f / 6;
+            changeScenery.ChangeTransparency(1f / 6);
             switch (AxisBool)
             {
                 case "LX":

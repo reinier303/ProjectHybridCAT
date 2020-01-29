@@ -31,6 +31,7 @@ public class ChangeScenery : MonoBehaviour
     public float FriendTransparency;
     public bool LXAxisSweet, LYAxisSweet, LZAxisSweet, RXAxisSweet, RYAxisSweet, RZAxisSweet;
 
+    public MeshRenderer FriendMaterial;
 
     private void Awake()
     {
@@ -185,5 +186,12 @@ public class ChangeScenery : MonoBehaviour
                 randomScenery.Add(scenery);
             }
         }
+    }
+
+    public void ChangeTransparency(float value)
+    {
+        FriendTransparency += value;
+        Color currentColor = FriendMaterial.material.color;
+        FriendMaterial.material.color = new Color(currentColor.r,currentColor.g,currentColor.b,FriendTransparency);
     }
 }
