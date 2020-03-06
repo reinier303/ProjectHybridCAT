@@ -221,7 +221,7 @@ public class Scenery : MonoBehaviour
 
     private void CheckIfSweetSpot(float startValue, float currentValue, float rangeValue, bool axisSweet, string AxisBool)
     {
-        if (currentValue < (-rangeValue / 10 + startValue) || currentValue > (rangeValue / 10 + startValue) && axisSweet)
+        if (currentValue < (-rangeValue / 1.5f + startValue) || currentValue > (rangeValue / 1.5f + startValue) && axisSweet)
         {
             switch (AxisBool)
             {
@@ -281,7 +281,7 @@ public class Scenery : MonoBehaviour
                     }
             }
         }
-        else if (currentValue > (-rangeValue / 10 + startValue) && currentValue < (rangeValue / 10 + startValue) && !axisSweet)
+        else if (currentValue > (-rangeValue / 1.5f + startValue) && currentValue < (rangeValue / 1.5f + startValue) && !axisSweet)
         {
             changeScenery.ChangeTransparency(1f / 6);
             switch (AxisBool)

@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Bas;
 
 public class ChangeScenery : MonoBehaviour
 {
+    private bool canWin;
     [SerializeField]
     public Transform LeftController;
     [SerializeField]
@@ -31,8 +33,12 @@ public class ChangeScenery : MonoBehaviour
     public float FriendTransparency;
     public bool LXAxisSweet, LYAxisSweet, LZAxisSweet, RXAxisSweet, RYAxisSweet, RZAxisSweet;
 
-    public MeshRenderer FriendMaterial;
-
+    public SkinnedMeshRenderer FriendMaterial;
+    private IEnumerator CanWin()
+    {
+        yield return new WaitForSeconds(15f);
+        canWin = true;
+    }
     private void Awake()
     {
         Instance = this;
@@ -42,6 +48,8 @@ public class ChangeScenery : MonoBehaviour
         RXAxisSweet = false;
         RYAxisSweet = false;
         RZAxisSweet = false;
+        canWin = false;
+        StartCoroutine(CanWin());
         foreach (GameObject foundObject in GameObject.FindGameObjectsWithTag("Scenery"))
         {
             if(!foundObject.GetComponent<Scenery>())
@@ -193,5 +201,10 @@ public class ChangeScenery : MonoBehaviour
         FriendTransparency += value;
         Color currentColor = FriendMaterial.material.color;
         FriendMaterial.material.color = new Color(currentColor.r,currentColor.g,currentColor.b,FriendTransparency);
+        if(FriendTransparency >= 1 && canWin)
+        {
+            Globals.OnFissaInitializeHandler();
+        }
+        
     }
 }
